@@ -1,7 +1,7 @@
 echo 'Entrez pierre,feuille ou ciseaux'
 read user_rep
 var=$(shuf -i1-3 -n1)
-if [ $var="1" ]; then
+if [ $var -eq 1 ]; then
 	echo "Vous avez dit $user_rep, le programme dit : pierre"
 else
 	if [ $var="2" ]; then
