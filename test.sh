@@ -4,7 +4,7 @@ var=$(shuf -i1-3 -n1)
 if [ $var -eq 1 ]; then
 	echo "Vous avez dit $user_rep, le programme dit : pierre"
 else
-	if [ $var="2" ]; then
+	if [ $var -eq 2 ]; then
 		echo "Vous avez dit $user_rep, le programme dit : feuille"
 	else
 		echo "Vous avez dit $user_rep, le programme dit : ciseaux"
